@@ -41,8 +41,11 @@ const activeItemStyles = computed(
                             <Link :class="['link-large', activeItemStyles('/')]" href="/">Home</Link>
                         </li>
                         <li>
-                            <Link class="link-large" href="/about-us">About<span
+                            <Link class="link-large" href="/about">About<span
                                     class="hidden xl:inline"> Us</span></Link>
+                        </li>
+                        <li>
+                            <Link class="link-large" href="/portfolio">Portfolio</Link>
                         </li>
                         <li>
                             <Link class="link-large" href="/services">Services</Link>
@@ -84,7 +87,12 @@ const activeItemStyles = computed(
                         <li>
                             <Link
                                 class="block rounded-lg px-4 py-3 hover:bg-primary/30 active:border-2 active:border-primary/30"
-                                href="/about-us">About Us</Link>
+                                href="/about">About Us</Link>
+                        </li>
+                        <li>
+                            <Link
+                                class="block rounded-lg px-4 py-3 hover:bg-primary/30 active:border-2 active:border-primary/30"
+                                href="/portfolio">Our Work</Link>
                         </li>
                         <li>
                             <Link

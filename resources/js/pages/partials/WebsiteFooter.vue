@@ -46,7 +46,7 @@ import { Mail, MessageCircleMoreIcon, Phone } from 'lucide-vue-next';
                     <h4 class="font-semibold">Navigation</h4>
                     <ul class="mt-2">
                         <li>
-                            <a href="/about-us" class="block py-1">About us</a>
+                            <a href="/about" class="block py-1">About us</a>
                         </li>
                         <li>
                             <a href="/services" class="block py-1">Our Services</a>

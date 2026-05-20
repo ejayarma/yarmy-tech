@@ -4,12 +4,14 @@ use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\ContactPageController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\LegalController;
+use App\Http\Controllers\PortfolioPageController;
 use App\Http\Controllers\ServicesPageController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', HomePageController::class)->name('home');
-Route::get('/about-us', AboutPageController::class)->name('about');
+Route::get('/about', AboutPageController::class)->name('about');
+Route::get('/portfolio', PortfolioPageController::class)->name('portfolio');
 Route::get('/services', ServicesPageController::class)->name('services');
 Route::get('/contact', [ContactPageController::class, 'index'])->name('contact.index');
 Route::post('/contact', [ContactPageController::class, 'store'])->middleware('throttle:5,1')->name('contact.store');
